@@ -13,6 +13,9 @@ public class Aula3_Exemplo1 {
         System.out.println("Por favor digite o número 2: ");
         double numero2 = leitor.nextDouble();
 
+        // Verificando seos números são iguais
+
+
         if (numero1 > numero2) {
             System.out.println("O número 1 é o maior!");
         }
