@@ -17,14 +17,20 @@ public class Aula3_Exemplo2 {
 
         // Criando a estrutura de decisão
 
-        if (produto1 < produto2 & produto1 < produto3) {
-            System.out.println("O produto 1 é o mais barato!");
-        }
-        else if (produto2 < produto1 & produto2 < produto3) {
-            System.out.println("O produto 2 é o mais barato!");
-        }
-        else {
-            System.out.println("O produto 3 é o mais barato!");
-        }
+       if (produto1 > 0 & produto2 > 0 & produto3 > 0) {
+           if (produto1 < produto2 & produto1 < produto3) {
+               System.out.println("O produto 1 é o mais barato!");
+           }
+           else if (produto2 < produto1 & produto2 < produto3) {
+               System.out.println("O produto 2 é o mais barato!");
+           }
+           else {
+               System.out.println("O produto 3 é o mais barato!");
+           }
+
+       }
+       else {
+           System.out.println("Por favor digite um valor maior que zero!");
+       }
     }
 }
