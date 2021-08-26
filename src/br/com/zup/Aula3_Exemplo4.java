@@ -12,9 +12,9 @@ public class Aula3_Exemplo4 {
         double nota2 = leitor.nextDouble();
 
         // Calculando a média
-        double media = (nota1 + nota2 / 2);
+        double media = (nota1 + nota2)/2;
 
-        if (nota1 < 0 & nota2 < 0) {
+        if (nota1 >= 0 & nota2 >= 0 & nota1 <= 10 & nota2 <= 10) {
             if (media >= 0 & media < 7) {
                 System.out.println("Você foi reprovado com a nota:" + media);
             }
@@ -26,7 +26,7 @@ public class Aula3_Exemplo4 {
             }
         }
         else{
-            System.out.println("Por favor, digite um valor válido!");
+            System.out.println("Por favor, digite uma nota entre 0 e 10!");
         }
     }
 }
